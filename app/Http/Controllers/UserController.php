@@ -39,8 +39,10 @@ class UserController extends Controller
     {
         $request->validate([
             'name' => 'required',
-            'email' => 'required',
-             'password' => 'required|confirmed|min:8',
+            'email' => ['required','unique:users,email'],
+            'password' => ['required','min:8'],
+            'password_confirmation'  =>  ['required','same:password']
+            
         ]);
     
         User::create($request->all());
@@ -82,8 +84,7 @@ class UserController extends Controller
     {
         $request->validate([
             'name' => 'required',
-            'email' => 'required',
-            'password' => 'required|confirmed|min:8',
+            'email' => ['required','unique:users,email,'.$user->id],
         ]);
     
         $user->update($request->all());

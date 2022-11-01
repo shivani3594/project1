@@ -40,10 +40,6 @@
                    <!--  <textarea class="form-control" style="height:150px" name="email" placeholder="Email">{{ $user->email }}</textarea> -->
                     <input type="text" name="email" value="{{ $user->email }}" class="form-control" placeholder="Email">
                 </div>
-                 <div class="form-group">
-                    <strong>Password:</strong>
-                    <input type="text" name="password" value="{{ $user->password }}" class="form-control" placeholder="Password">
-                </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
               <button type="submit" class="btn btn-primary">Submit</button>

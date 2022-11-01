@@ -45,12 +45,12 @@
                 <input type="password"  class="form-control" name="password" placeholder="Password">            
             </div>
         </div>
-        <!--  <div class="col-xs-12 col-sm-12 col-md-12">
+         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Confirm Password:</strong>
-                <input type="password"  class="form-control" name="confirm_password" placeholder="Confirm Password">            
+                <input type="password"  class="form-control" name="password_confirmation" placeholder="Confirm Password">            
             </div>
-        </div> -->
+        </div>
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                 <button type="submit" class="btn btn-primary">Submit</button>
         </div>
